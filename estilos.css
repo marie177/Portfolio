@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 620px;
+    padding: 60px 40px 0px 40px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+#nav {
+    height: 20px;
+    margin: 20px;
+}
+
+.nav-logo{
+    background-repeat: no-repeat;
+    background-position: 25% 35%;
+    width: 25px;
+    height: 25px;
+    background-image: url("assets/images/galaxy.png");
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.nav-items a{
+    color: rgb(255, 255, 255);
+}
+
+.nav-items li {
+    font-size: 13px;
+    margin: 0px 20px 0 20px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav-items li:hover {
+    text-shadow:2px 2px 5px rgb(255, 245, 245);
+}
+
+.title {
+    font-size: 70px;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.down-button {
+    font-size: 30px;
+    text-align: center;
+    width: 100% !important;
+    cursor: pointer;
+    margin-top: 40px;
+    color: aliceblue;
+}
+
+.down-button a {
+    color: aliceblue;
+}
+
+.down-button:hover{
+    text-shadow:2px 2px 5px rgb(255, 245, 245);
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 110px 80px 60px 80px;
+    height: 400px;
+}
+
+.presentation {
+    width: 100%;
+    height: 390px;
+    padding: 140px 0px 0px 0px;
+    background-image: url("assets/images/galaxy.png");
+    background-repeat: no-repeat;
+    background-position: 55% 95%;
+    /* background-position: 45% 75%; */
+    background-attachment: fixed;
+}
+
+.presentation .title{
+    padding-left: 40px;
+}
+
+.presentation .subtitle{
+    padding-left: 40px;
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 610px;
+    padding: 60px 0px 0px 0px; 
+}
+
+.imgAbout{
+    width: 40%;
+    background-color: aqua;
+    height: 100%;
+    background-image: url("/assets/images/marianella.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_text{
+    width: 60%;
+    height: 100%;
+    background-color:aliceblue;
+    padding: 60px 120px 0px 45px;
+}
+
+.about_text h4{
+    font-size: 35px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.about_text p{
+    font-size: 15px;
+    color: #a09f9f;
+    font-weight:lighter;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+
+.line{
+    height: 4px;
+    width: 10%;
+    background-color: #ff0606;
+    border-radius: 25px;
+}
+
+/* #portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 620px;
+    padding: 60px 40px 60px 40px;
+} */
+.knowledge-bgd{
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    filter: blur(2px);
+    width: 100%;
+}
+.knowledge-text{
+    color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 110px 0px 0px 0px;
+}
+/* .knowledge-text h1{
+    font-size: 50px;
+} */
+
+/* .knowledge-title{
+    text-align: center;
+} */
+
+.knowledge-title h1{
+    -webkit-text-stroke: 1px rgb(61, 59, 59);
+    color: transparent; 
+    font-size: 80px;
+}
+
+.knowledge-title h3{
+    top: 160px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: #a09f9f;
+}
+
+/* .knowledge-title:hover{
+    text-shadow:2px 2px 5px rgb(255, 255, 255);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.knowledge-title:hover h3{
+    color: #000000;
+    font-size: 55px;
+    transition: 0.5s;
+} */
+.knowledge-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 150px 0px 150px;
+    color: #fffbfb;
+}
+.knowledge-list div{
+    width: 50%;
+    margin-right: 50px;
+}
+.knowledge-list h1{
+    font-size: 30px;
+}
+.knowledge-list .grid{
+    align-items: flex-start;
+}
+.knowledge-list .grid div{
+    margin: 10px 0px 0px 0px;
+}
+.knowledge-list .grid div{
+    width: 100%  !important;
+
+}
+.knowledge-item:hover{
+    text-shadow:4px 1px 3px rgb(255, 255, 255);
+    cursor: pointer;
+    /* background-color: rgb(206, 206, 206); */
+}
+.knowledge-item h6{
+font-size: 15px;
+font-weight: lighter;
+text-align: left;
+}
+.bar{
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+#portfolio{
+    flex-wrap: wrap;
+    margin: 60px 0px 0px 0px;
+}
+.portoflio-title {
+    width: 30%;
+    text-align: center;
+}
+.portoflio-title h4{
+    overflow-wrap: break-word;
+    font-size: 100px;
+    color: #fffbfb;
+    font-weight: bold;
+    inline-size: 340px;
+    letter-spacing: 4PX;
+    text-align: justify;
+}
+
+.portfolio-information{
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolio-information .portfolio-item{
+    width: 30%;
+    margin: 10px 10px 10px 30px;
+}
+
+.portfolio-item img{
+    width: 100%;
+    object-fit:cover;
+}
+
+/*desarrollar para que cuando hover, aparessca para ver mas info del proyeto*/
+.portfolio-item img:hover{
+    cursor: pointer;
+}
+
+.portfolio-item h6{
+    font-size: 20px;
+    color: #fffbfb;
+    font-weight: bold;
+    letter-spacing: 1PX;
+    text-align: center;
+    padding: 5px;
+}
+
+.portfolio-item p{
+    font-size: 14px;
+    color: #fffbfb;
+    letter-spacing: 0.5PX;
+    text-align: center;
+    padding: 5px;
+}
