@@ -14,7 +14,8 @@
 <body>
     <header class="header">
         <nav>
-            <div class="nav-logo"> <a href=""></a></div>
+            <a href="#" class="nav-logo"></a>
+            <!-- <div class="nav-logo"> </div> -->
             <div id="nav">
                 <ul class="nav-items">
                     <a href="#">
@@ -72,14 +73,14 @@
             </p>
 
             <a href="assets/attachments/CV_MarianellaGottig.pdf" download="CV_MarianellaGottig.pdf">
-                <button>
+                <button class="button button-cv">
                     Descarga mi CV!
                 </button>
             </a>
         </div>
     </section>
 
-    <section id="knowledges" class="section">
+    <section id="knowledges">
         <div class="knowledge-bgd">
         </div>
         <div class="knowledge-text">
@@ -138,65 +139,91 @@
                 </div>
             </div>
         </div>
-        <!-- DESARROLLAR-->
-        <!-- <div>
-            <h1>HERRAMIENTAS</h1>
-            <div>
-                <i></i> o 
-                <img src="" alt="">
-                <h6>GIT</h6>
-            </div>
-            <div>
-                <i></i> o 
-                <img src="" alt="">
-                <h6>Postman</h6>
-            </div>
-            <div>
-                <i></i> o 
-                <img src="" alt="">
-                <h6>GIT</h6>
-            </div>
-        </div> -->
+    </section>
+
+    <section id="tools">
+        <div class="tools_item">
+            <img src="assets/icons/adobbexd_icon.png" alt="">
+            <h6>Adobe Xd</h6>
+        </div>
+
+        <div class="tools_item">
+            <img src="assets/icons/postman_icon.png" alt="">
+            <h6>Postman</h6>
+        </div>
+
+        <div class="tools_item">
+            <img src="assets/icons//git_icon.png" alt="">
+            <h6>Git</h6>
+        </div>
+
     </section>
 
     <section id="portfolio" class="section">
+        <div class="bar"></div>
         <div class="portoflio-title">
+            <h1>PORT-FOLIO</h1>
             <h4>PORT-FOLIO</h4>
         </div>
         <div class="portfolio-information">
-            <div class="portfolio-item">
-                <h6>ARMAC++</h6>
-                <img src="https://www.nicepng.com/png/detail/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png"
-                    alt="">
-                <p>
-                    Sistema de Gestion de Armas
-                </p>
+            <div class="portfolio-item ">
+                <div class="project1"></div>
+                <div class="project-description mt-30">
+                    <p>El programa tiene como objetivo mantener
+                        un registro de las Armas que se solicitan
+                        en un Poligono de Tiro, asi mismo tambien cuenta 
+                        con la posibilidad de registrar usuarios y 
+                        poder tener un seguimiento del estado actual de
+                        cada uno de los socios del Poligono.
+                    </p>
+                    <p> Lenguaje: C++</p>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <h6>Virtual Shop</h6>
-                <img src="https://www.nicepng.com/png/detail/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png"
-                    alt="">
-                <p>
-                    Carrito de Compras
-                </p>
-            </div>
-            <div class="portfolio-item">
-
-                <h6>
-                    <span style="font-size:15px;font-weight: lighter;">En proceso: </span>
-                    AstroVision
-                </h6>
-                <img src="https://www.nicepng.com/png/detail/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png"
-                    alt="">
-                <p>
-                    Aplicacion Web Astronomica
-                </p>
+            <div class="portfolio-item">          
+                <div class="project-description">
+                    <p>El programa tiene como objetivo mantener
+                        un seguimiento de los Articulos que se registran
+                        en el mismo. 
+                    </p>
+                    <p> Cuenta con la posibilidad de visualizar el Stock disponible,
+                        la Marca y Categoria a la que pertenezcan, 
+                        modificar y/o dar de baja un articulo.</p>
+                    <p> Lenguaje: C#</p>
+                </div>
+                <div class=" project2"></div>
             </div>
         </div>
         <div class="bar"></div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section-mini">
+        <h1>Contacto</h1>
+        <div class="contacto-info contacto-grid">
+            <div class="grid">
+                <a class="icon-contacto" href="mailto:gottigmarianella@hotmail.com"><img src="/assets/icons/email.png" alt=""></a>
+                <h4>Email</h4>
+                <!-- <h6>dfsdfsdsdf@gmail.com</h6> -->
+            </div>
+            <div class="grid">
+                <a class="icon-contacto" href="https://github.com/marie177"><img src="/assets/icons/github.png" alt=""></a>       
+                <h4>GitHub</h4>
+                <!-- <h6>@Marie177</h6> -->
+            </div>
+
+
+            <div class="grid">
+                <a class="icon-contacto" href="https://www.linkedin.com/in/marianella-gottig-93a7a7239/"><img src="/assets/icons/linkedin.png" alt=""></a>
+                <h4>Linkedin</h4>
+                <!-- <h6>Argentina</h6> -->
+            </div>
+
+            <div class="grid">
+                <a class="icon-contacto" href="https://dribbble.com/Marie177"><img src="/assets/icons/dribbble.png" alt=""></a>
+                <h4>Dribble</h4>
+                <!-- <h6>Argentina</h6> -->
+            </div>
+
+        </div>
     </section>
     <footer>
 
